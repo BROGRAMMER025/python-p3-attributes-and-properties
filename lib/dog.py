@@ -18,14 +18,14 @@ class Dog:
         self.name = name
         self.breed = breed
 
-    # Getters
+    
     def get_name(self):
         return self._name
 
     def get_breed(self):
         return self._breed
 
-    # Setters
+    
     def set_name(self, value):
         if isinstance(value, str) and 1 <= len(value) <= 25:
             self._name = value
@@ -43,6 +43,6 @@ class Dog:
     breed = property(get_breed, set_breed)
 
 
-dog1 = Dog("Fido", "Human")
+dog1 = Dog("Fido", "Corgi")
 print(dog1.name)
 print(dog1.breed)
